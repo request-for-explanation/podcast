@@ -18,3 +18,11 @@ comment once they understand the issues.
 We'd love to have guests on! Whether you're an RFC author, someone interested in a particular RFC, or someone who has questions
 about what an RFC means, you'd make a great guest! Please indicate your interest on an existing issue or file a new issue for
 the RFC you're interested in and let us know you'd like to be a guest.
+
+## License
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+</a>
+
+The text and audio for this podcast (anything in this repo) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
