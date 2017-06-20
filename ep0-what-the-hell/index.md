@@ -21,4 +21,10 @@ This week we look at [RFC 2005](https://github.com/rust-lang/rfcs/blob/master/te
 
 ## Notes
 
-$NOTES
+* [RFC 1944](https://github.com/rust-lang/rfcs/pull/1944), the predecessor of #2005
+
+## Panelists
+
+* Carol Nichols
+* Alexis Beingessner
+* Manish Goregaokar
