@@ -1,0 +1,44 @@
+.header {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.header-img {
+  float:left;
+  width: 60%;
+}
+
+.header-content {
+  float:right;
+  width: 40%;
+}
+
+.padded {
+  padding: 1em;
+}
+
+.simple-list {
+  list-style: none;
+}
+
+.content {
+	max-width: 55em;
+	margin: auto;
+  font-family: sans-serif;
+}
+
+.section-header > a {
+  text-decoration: none;
+  color: black;
+}
+
+audio {
+  width: 100%;
+}
+
+.footer {
+  margin-top: 5em;
+  padding: 1em;
+  border-top: 1px solid;
+  width: 100%;
+}
