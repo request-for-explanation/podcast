@@ -26,3 +26,21 @@ the RFC you're interested in and let us know you'd like to be a guest.
 </a>
 
 The text and audio for this podcast (anything in this repo) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
+## Building workflow
+
+* make `$DIR` for episode
+* add `$DIR/episode.mp3` (and friends)
+* copy `src/template.md` to `$DIR/index.md`
+
+* replace all `$VARIABLES` in `index.md` with content
+* `./build.sh $DIR` (must have `rustdoc` in your path)
+* tweak `index.md` and repeat previous step until happy
+
+* `git add .`
+* `git commit -m "episode xxx"`
+* `git push`
+
+You can tweak the CSS without regenerating anything, but any edits to `src/*.html` (which rustdoc injects in certain places) 
+will require a rebuild of every episode. Changing the template will require a manual edit of every episode, followed by a 
+rebuild of every episode.
