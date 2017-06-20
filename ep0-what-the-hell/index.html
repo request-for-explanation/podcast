@@ -55,6 +55,286 @@
 <li>Manish Goregaokar</li>
 </ul>
 
+<h2 id='transcript' class='section-header'><a href='#transcript'>Transcript</a></h2>
+<p>Carol Nichols: Hi everyone. Welcome to the inaugural episode of the Request for
+Explanations podcast, where we discuss Rust&#39;s RFCs. On the show today is me,
+Carol Nichols,---</p>
+
+<p>Alexis Beingessner: me, Alexis Beingessner,---</p>
+
+<p>Manish Goregaokar: and me, Manish Goregaokar.</p>
+
+<p>CN: Today we&#39;re going to be discussing the match RFC.</p>
+
+<p>This podcast is a means to help everyone keep up with RFCs that are going
+through. This idea actually came from the IRC user misdreavous last December,
+and recently Alexis brought up a summary of this match RFC that was a really
+great summary, which reminded me of this idea. So we&#39;re finally starting to do
+it.</p>
+
+<p>So, Alexis. Talk to us about RFC 2005.</p>
+
+<p>AB: This RFC is part of the Rust core team&#39;s new big ergonomics initiative for
+the year. There&#39;s a bunch of tiny little paper cuts in the language which, once
+you learn the language, it&#39;s like, whatever, this is some work that I need to
+do, but: a) everyone hates doing it; and b) it trips up newbies a lot. They&#39;re
+like, &quot;What the hell is this language? Why do I need to do this? What&#39;s
+happening? Does this mean anything important?&quot; And this [RFC] is trying to
+focus on the way match patterns work.</p>
+
+<p>If you&#39;ve used Rust for a while, you&#39;ve probably had to match on certain enums
+in a nontrivial way. For instance, you match on an <code>Option</code> and you want to
+take a reference to the value inside of the <code>Option</code>, rather than just copying
+or moving the value. When you want to do that, it ends up being a bit messy.</p>
+
+<p>Today, if you, say, have a <code>&amp;Option</code> and you try and match on it the same way
+you would match on a <code>Option</code>, you will get a compilation error. It will say
+&quot;error[E0308]: mismatched types&quot;. And you&#39;ll be like, &quot;What the heck are you
+talking about?&quot;</p>
+
+<p>What it&#39;s saying is, basically, &quot;Hey, you said you&#39;d be passing a value
+<code>Option</code>, but you passed a reference to a value.&quot; There&#39;s two ways you can fix
+this. You can either dereference your <code>Option</code> at the start of the match, or
+you can add a reference inside the pattern and tell the compiler, &quot;Hey, there&#39;s
+supposed to be a reference here. I know that. I&#39;m going to reach through the
+reference and grab the value instead.&quot;</p>
+
+<p>And then, once you want to actually take a reference to the field, you again
+have to say, &quot;Hey, actually take a reference to this thing.&quot; The way you do
+this is with something that is literally nowhere else in the language: the
+<code>ref</code> keyword. It just says, &quot;Hey, take a reference to this thing.&quot;</p>
+
+<p>The reason you need that is because patterns are weird and backwards. We put
+the ampersand to say &quot;Hey, undo this reference.&quot; There is technically a symbol
+for &quot;Do this reference.&quot; So you need a symbol for &quot;Undo this reference to
+create a reference.&quot; And in theory, that could have been the star, because
+that&#39;s how you dereference a pointer. But everyone decided that was confusing.</p>
+
+<p>So you end up having this thing where you have to manually dereference your
+thing and manually rereference your thing. And this is a bit annoying, because
+there&#39;s lots of places in the language where we don&#39;t bother doing that. Why do
+we need to do this in patterns?</p>
+
+<p>The really big example is closures. If you have a closure, you just say &quot;Hey, I
+want to use this value,&quot; and it&#39;s just like &quot;Cool, I&#39;ll figure out how to do
+that for you.&quot; The other really major place is the dot operator. The dot
+operator will just magically be like &quot;Oh, I see you have a reference there.
+Obviously you don&#39;t want to call a method on this reference. I&#39;m going to dig
+into the actual value and do the stuff you wanted.&quot;</p>
+
+<p>This RFC says, &quot;There&#39;s this really common case where you have a reference and
+you want to take a reference to the contents. We&#39;re going to add a fallback for
+this case.&quot; Today, it would be considered a mistake, and with this RFC it
+triggers a fallback.</p>
+
+<p>And it&#39;s a similar fallback to the integer fallback. You might be familiar with
+the integer fallback in Rust: if you say <code>let x=0;</code>, most of the time, that
+will be inferred. It will figure out, &quot;Oh, you&#39;re using this integer as a
+<code>usize</code>. I&#39;m going to assume it&#39;s a <code>usize</code>.&quot; Then everything works. But in
+some code --- notably, examples and tests --- it will be &quot;Oh, I don&#39;t know what
+to do. Nothing incurs this integer to be a type. I&#39;m going to fall back to
+<code>i32</code>. If I don&#39;t know what to do and I&#39;d be forced to give a compilation
+error, I&#39;m just going to say it&#39;s <code>i32</code>.&quot;</p>
+
+<p>This match RFC is doing a similar thing. It&#39;s saying, &quot;Oh, I don&#39;t know what to
+do because you said you have a <code>Option</code>, but you actually gave me a <code>&amp;Option</code>.
+I&#39;m going to fall back to assuming you want to dereference that and take a
+reference to the contents.&quot; This will always work, and it wills only change
+code that didn&#39;t compile before. It&#39;s strictly backwards compatible. Everyone&#39;s
+code continues to work the same, except, if you did this code that didn&#39;t
+compile before, it will now compile. Everyone can remove a bunch of <code>ref</code>s and
+<code>&amp;</code>s from their code.</p>
+
+<p>Similarly, for mutable references, it will do the same thing. If you have a
+mutable reference and <code>ref mut</code>, you can just elide both of those.</p>
+
+<p>CN: Does this mean that, once this is implemented, we&#39;ll never need to type the
+<code>ref</code> keyword ever again?</p>
+
+<p>AB: Unfortunately not. Well, that&#39;s interesting... I&#39;d need to think about all
+the implications.</p>
+
+<p>An example someone brought up during the discussion is, &quot;I like using <code>ref</code> and
+<code>ref mut</code> in the same patterns to explicitly state, &#39;These should be mutated;
+these shouldn&#39;t be mutated.&#39;&quot; If you want to enforce that, then you have to use
+<code>ref</code> and <code>ref mut</code>.</p>
+
+<p>And as far as I can tell, this system is very hostile towards mix and matching.
+You can&#39;t be like, &quot;Oh, I want to infer these fields but actually do the <code>ref</code>
+on these. If it&#39;s easier trying to mix and match the old and new mode, it just
+gives up and gets you there.</p>
+
+<p>MG: I think in the RFC they&#39;ve made it sort of sidestep inference, basically
+because they don&#39;t want inference to be influenced by this <code>ref</code> keyword. So
+there are places where you may need explicit <code>ref</code> because guessing the <code>ref</code>
+keyword leads to inference issues.</p>
+
+<p>There&#39;s an example in the RFC where there&#39;s a <code>Vec</code> of unknown type and they
+don&#39;t want to infer the type based on the body, so they&#39;re going to use the
+<code>ref</code> keyword.</p>
+
+<p>AB: That&#39;s actually a really good point. The logic the compiler needs to
+implement is basically, &quot;Look at the type of the input, and then look at the
+shape of the pattern.&quot; From those two facts, it can figure out exactly which
+rule we&#39;re applying. It never needs to look at the body of the match, modulo
+that the body of the match can actually affect the inference of the type of the
+input to the match. But that shouldn&#39;t affect whether it&#39;s a reference or not.
+I don&#39;t think.</p>
+
+<p>MG: Well, the example is matching on the result of an index. And when you index
+something with the indexing operator, you get this sort of state that&#39;s between
+a reference and not a reference.</p>
+
+<p>CN: What now?</p>
+
+<p>MG: When you use the indexing operator, it actually does something that&#39;s like
+moving out of an index. But you don&#39;t want to move. I guess it gives you a
+temporary, and you can match on the temporary and use <code>ref</code> to deal with it.
+But if you want to use it, you&#39;re forced to put the ampersand operator right
+before it. But Rust in certain situations allows you to do things as if you
+were moving out, provided that you don&#39;t actually need to move out.</p>
+
+<p>TL;DR: You can do <code>match vector[some number]</code>. Then if you&#39;re not allowed to
+move out of the vector.</p>
+
+<p>AB: Right. The reason this works is the same reason that <code>match *(a reference)</code>
+works. The index operator behaves as if there was an implicit dereference
+before it.</p>
+
+<p>CN: I think I get it. Maybe.</p>
+
+<p>AB: I think the exact mechanics of this, you have to start getting into &quot;What&#39;s
+an rvalue? What&#39;s an lvalue?&quot; And I don&#39;t want any part of this.</p>
+
+<p>CN: Oh, no. No.</p>
+
+<p>AB: I think there should be a hard rule that we never explain what an lvalue or
+an rvalue is on this podcast.</p>
+
+<p>[laughter]</p>
+
+<p>CN: To switch the subject, this RFC was actually the successor to another RFC.
+Do either of you want to summarize the previous RFC and how that was different
+from this one?</p>
+
+<p>AB: I will warn that I have not actually properly read this RFC. I have only
+read the discussion around it. My understanding of it is basically, it was
+trying to make matches behave sort of like closures do.</p>
+
+<p>Today, if you have a closure, as I mentioned, and you use some closed-over
+variable, it will just kind of figure out how to capture the variable. If you
+only read it, it will capture it by reference. If you mutate it, it will
+capture it by mutable reference. And if you consume it by value, it will move
+it into the closure. The last one is pretty obscure to trigger, but there are
+ways to do it.</p>
+
+<p>Matches would be the same way. It would look inside a branch, and it would
+look, &quot;Oh, you only read this value that you match on? I&#39;m gonna bind on it by
+reference. You mutate this value? I&#39;m gonna bind on it by mutable reference. Or
+you move it into the branch? I&#39;m gonna move it in.&quot; And I think, similar to
+closures, there&#39;s some fail cases where the inference will go, &quot;Oh, you only
+read it or write it? You only need a reference.&quot; But you actually need to move
+it in for whatever reason. So I think you&#39;d be allowed to use the <code>move</code>
+keyword in matches now, like &quot;Move this pattern in,&quot; explicitly.</p>
+
+<p>The problem with this is basically --- well, a) a lot of people were terrified
+because it&#39;s magic and the Rust community has taken a hard stance of &quot;Magic&#39;s
+scary.&quot; I know I probably freaked out the first time someone suggested doing
+this. I have a feeling a lot of other people on the Rust teams also freaked out
+when Aaron and Niko started being, &quot;Hey, what about this?&quot;</p>
+
+<p>But, more seriously, the reason it was considered trouble was, it changed the
+semantics of existing code. Rust is a bit underspecified, so you could maybe
+rules lawyer, &quot;Oh, we never actually guaranteed this,&quot; but in practice, Rust is
+pretty strict, and it did guarantee that, if you match on something by value,
+the stuff you bound by value would be moved into the body of the branch. And
+with this new system, it could see, &quot;Oh, you actually only read the value. I&#39;m
+going to only bind it by reference.&quot; This would change when destructors run.
+And that could be pretty serious. For instance, it could mean that the lock on
+a lock could be held longer than it should be. And maybe you&#39;ll get deadlocks,
+or maybe your program will just run slow because there&#39;s a lot more lock
+contention going on.</p>
+
+<p>I&#39;m not sure if anyone had any code where it was like, &quot;I&#39;m actually relying on
+this,&quot; but it was one of those, like, &quot;Let&#39;s not break the people&#39;s stuff.&quot; And
+this was one of the motivations for all of this discussion that was going on
+about whether Rust 2.0 should happen, and whether we would have, similar to
+C++, &quot;I&#39;m using Rust 2.0-standard semantics. Please change the semantics of my
+code to use the new matches that are much nicer to use, but a little tricky.&quot;</p>
+
+<p>CN: Well, I&#39;m not sure that we&#39;ll ever go to Rust 2.0 in the
+fully-breaking-and- abandoning-backwards-versions, but that&#39;s the topic for a
+future episode.</p>
+
+<p>So it sounds like the new RFC landed on something that&#39;s pretty nice. It keeps
+backwards compatibility but makes the ergonomics a lot better.</p>
+
+<p>AB: Yeah. There is some small concern for, if you&#39;re a novice, or even just an
+intermediate person who&#39;s really not feeling it today, there&#39;s a lot of times
+where you&#39;re like, &quot;Ah, why isn&#39;t this code compiling?&quot; and you&#39;ll just try and
+add or remove references or add <code>clone</code>s.</p>
+
+<p>CN: There&#39;s a comment of Aaron&#39;s on RFC 2005 that says, &quot;This is basically how
+my mind always wants pattern matching to work, before I remind myself to go
+sprinkle in <code>ref</code>s.&quot; I don&#39;t think I&#39;d call Aaron an &quot;intermediate.&quot; I think
+he&#39;s pretty advanced. Pretty advanced people do this too.</p>
+
+<p>AB: Absolutely. Basically, the concern is, when you&#39;re in this mode of &quot;Why
+isn&#39;t this working?&quot; --- again, you could be a beginner or an advanced person
+who&#39;s tired or having none of this --- you could end up getting the wrong thing
+because now more things compile. Before, it was like, you really have to figure
+out what you want and nail it down. Now there&#39;s two ways to get the same thing.</p>
+
+<p>So there&#39;s some concern that maybe that will lead to more erroneous code. But
+when I looked at it, it&#39;s pretty tough to produce this code. It&#39;s sort of like
+you have to make a double sign error, if you&#39;ve ever seen that in code, where
+it&#39;s like, &quot;Oh, I actually messed this code up twice, and it got the right
+thing because they cancelled each other out.&quot; Any way you can screw up the new
+matches, you have to make this kind of double mistake.</p>
+
+<p>MG: My concern is somewhat related. It&#39;s what I call like, &quot;The union of a
+simple system and a complex system is not a simple system.&quot; When you have
+something complex and you try papering over the complexity with magic, what
+ultimately happens, in most cases, is that the complexity is still there. And
+you eventually have to learn this. You have folks wondering, &quot;Why did this
+magic not work?&quot; That&#39;s an additional layer of complexity that people have to
+think about while learning the language.</p>
+
+<p>Which you eventually get over. One case of this is with lifetimes, where you
+start off relying on elision, and when it doesn&#39;t work, you basically blame the
+language and just walk away and never use Rust again. And when you&#39;re
+intermediate, you&#39;re able to switch between the two, but you don&#39;t know where
+each one will work. And when you&#39;re advanced, you again know that you should
+just be relying on elision all over the place, but you also know exactly when
+it&#39;s not going to help you and you write the code before the compiler yells at
+you.</p>
+
+<p>It&#39;s the same thing here. It takes a long time to get to that stage where you
+understand that this is a piece of magic. It&#39;s not the same feature; these are
+two separate things and there&#39;s some magic above it, and the magic sometimes
+applies, but not always. And when you&#39;re learning a language without proper
+guidance, you&#39;re going to end up, you know, not realizing that.</p>
+
+<p>CN: Okay. We&#39;re trying to keep this around 20 minutes to be short and
+digestible, so I think that&#39;s all the time we have for today. If you have an
+RFC that you&#39;d like us to discuss, please go to
+[<a href="https://github.com/request-for-explanation/podcast">https://github.com/request-for-explanation/podcast</a>] and file us an issue with
+the RFC you want us to talk about. I&#39;d like to thank &#39;cramertj&#39; for authoring
+the RFC we discussed today. Any parting words from anyone?</p>
+
+<p>AB: This change was good. Happy it&#39;s landed. We&#39;ll probably use it as soon as
+it&#39;s on stable.</p>
+
+<p>CN: Yeah, that&#39;s a good point. This RFC has been merged but not yet
+implemented. I believe the implementation issue is looking for someone to
+implement it, and there are mentors offering to help you. So go check that out
+if you&#39;re interested in being the one to implement this.</p>
+
+<p>All right, tune in next time to see if we stumble as much as we did this time.
+Thanks for listening.</p>
+
+<p>[20:29]</p>
+
     
 <div class="footer">
     <a href=".."> Back To Home </a>
