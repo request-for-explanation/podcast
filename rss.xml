@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>Request For Explanation</title>
+    <link>https://request-for-explanation.github.io/podcast/</link>
+    <description>A weekly discussion of Rust RFCs</description>
+    
+    <item>
+       <title>Episode #0 - What the Hell</title>
+       <link>https://request-for-explanation.github.io/podcast/ep0-what-the-hell/</link>
+    </item>
+  </channel>
+</rss>
