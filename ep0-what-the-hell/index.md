@@ -31,6 +31,8 @@ This week we look at [RFC 2005](https://github.com/rust-lang/rfcs/blob/master/te
 
 ## Transcript
 
+Transcription courtesy of wirelyre! Thank you! <3
+
 Carol Nichols: Hi everyone. Welcome to the inaugural episode of the Request for
 Explanations podcast, where we discuss Rust's RFCs. On the show today is me,
 Carol Nichols,---
