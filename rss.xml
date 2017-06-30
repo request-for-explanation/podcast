@@ -13,6 +13,12 @@
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep0-what-the-hell/</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep0-what-the-hell/episode.mp3" length="7057920" type="audio/mpeg" />
     </item>
-    
+    <item>
+      <title>Episode #1 - Constermash</title>
+      <link>https://request-for-explanation.github.io/podcast/ep1-constermash/</link>
+      <pubDate>Thu, 29 Jun 2017 17:30:00 PDT</pubDate>
+      <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep1-constermash/</guid>
+      <enclosure url="http://request-for-explanation.github.io/podcast/ep1-constermash//episode.mp3" length="7057920" type="audio/mpeg" />
+    </item>
   </channel>
 </rss>
