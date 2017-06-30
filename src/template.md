@@ -5,7 +5,7 @@
 This week we look at [RFC $RFC_NUMBER](https://github.com/rust-lang/rfcs/blob/master/text/$XXXX-I-AM-AN-RFC.md)
 "$RFC_TITLE"
 
-<audio>
+<audio controls="controls">
     <source src="episode.mp3" type="audio/mp3">
     <source src="episode.ogg" type="audio/ogg">
     <source src="episode.m4a" type="audio/x-m4a">

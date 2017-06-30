@@ -5,7 +5,7 @@
 This week we look at [RFC 2000](https://github.com/withoutboats/rfcs/blob/const-generics/text/0000-const-generics.md)
 "Const Generics"
 
-<audio>
+<audio controls="controls">
     <source src="episode.mp3" type="audio/mp3">
     <source src="episode.ogg" type="audio/ogg">
     <source src="episode.m4a" type="audio/x-m4a">
