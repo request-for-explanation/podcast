@@ -36,6 +36,7 @@ The text and audio for this podcast (anything in this repo) is licensed under a 
 * replace all `$VARIABLES` in `index.md` with content
 * `./build.sh $DIR` (must have `rustdoc` in your path)
 * tweak `index.md` and repeat previous step until happy
+* add entry to rss.xml
 
 * `git add .`
 * `git commit -m "episode xxx"`
