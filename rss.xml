@@ -27,5 +27,12 @@
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep2-stealing-chickens-on-the-internet</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep2-stealing-chickens-on-the-internet/episode.mp3" length="19608187" type="audio/mpeg" />
     </item>
+    <item>
+      <title>Episode #3 - Aaron's Favorite Topic</title>
+      <link>https://request-for-explanation.github.io/podcast/ep3-aarons-favorite-topic/</link>
+      <pubDate>Mon, 10 July 2017 16:00:00 PDT</pubDate>
+      <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep3-aarons-favorite-topic</guid>
+      <enclosure url="http://request-for-explanation.github.io/podcast/ep3-aarons-favorite-topic/episode.mp3" length="19070229" type="audio/mpeg" />
+    </item>
   </channel>
 </rss>
