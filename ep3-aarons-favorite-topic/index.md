@@ -23,3 +23,8 @@ This week we talk about the RFC process in general -- what it is, how it works, 
 * Carol Nichols
 * Aaron Turon
 * Ashley Williams
+
+## Notes
+
+ - [Original RFC process outline](https://github.com/rust-lang/rfcs/blob/master/text/0002-rfc-process.md)
+ - The [Governance RFC](https://github.com/rust-lang/rfcs/blob/master/text/1068-rust-governance.md) heavily reworked this process
