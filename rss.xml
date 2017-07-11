@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">
   <channel>
     <title>Request For Explanation</title>
     <link>https://request-for-explanation.github.io/podcast/</link>
@@ -7,7 +7,7 @@
     <atom:link href="http://request-for-explanation.github.io/podcast/rss.xml" rel="self" type="application/rss+xml" />
     <googleplay:author>The Request For Explanation Podcast</googleplay:author>
     <googleplay:email>manishearth@gmail.com</googleplay:email>
-    <googleplay:image href="https://avatars3.githubusercontent.com/u/29510519?v=3&s=200" />
+    <googleplay:image href="https://avatars3.githubusercontent.com/u/29510519?v=3" />
     <language>en-us</language>
     <googleplay:category text="Technology"/>
     <item>
