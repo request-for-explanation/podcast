@@ -5,13 +5,19 @@
     <link>https://request-for-explanation.github.io/podcast/</link>
     <description>A weekly discussion of Rust RFCs</description>
     <atom:link href="http://request-for-explanation.github.io/podcast/rss.xml" rel="self" type="application/rss+xml" />
-    
+    <googleplay:author>The Request For Explanation Podcast</googleplay:author>
+    <googleplay:email>manishearth@gmail.com</googleplay:email>
+    <googleplay:image href="https://avatars3.githubusercontent.com/u/29510519?v=3&s=200" />
+    <language>en-us</language>
+    <googleplay:category text="Technology"/>
     <item>
       <title>Episode #0 - What the Hell</title>
       <link>https://request-for-explanation.github.io/podcast/ep0-what-the-hell/</link>
       <pubDate>Mon, 19 Jun 2017 19:45:01 EST</pubDate>
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep0-what-the-hell/</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep0-what-the-hell/episode.mp3" length="7057920" type="audio/mpeg" />
+      <description>This week we look at RFC 2005 "Match Ergonomics Using Default Binding Modes"</description>
+      <itunes:order>1</itunes:order>
     </item>
     <item>
       <title>Episode #1 - Constermash</title>
@@ -19,6 +25,8 @@
       <pubDate>Thu, 29 Jun 2017 17:30:00 PDT</pubDate>
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep1-constermash/</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep1-constermash/episode.mp3" length="28588800" type="audio/mpeg" />
+      <description>This week we look at RFC 2000 "Const Generics"</description>
+      <itunes:order>2</itunes:order>
     </item>
     <item>
       <title>Episode #2 - Stealing Chickens on the Internet</title>
@@ -26,6 +34,8 @@
       <pubDate>Thu, 6 July 2017 15:30:00 PDT</pubDate>
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep2-stealing-chickens-on-the-internet</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep2-stealing-chickens-on-the-internet/episode.mp3" length="19608187" type="audio/mpeg" />
+      <description>This week we look at RFC 2052 "Evolving Rust through Epochs"</description>
+      <itunes:order>3</itunes:order>
     </item>
     <item>
       <title>Episode #3 - Aaron's Favorite Topic</title>
@@ -33,6 +43,8 @@
       <pubDate>Mon, 10 July 2017 16:00:00 PDT</pubDate>
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep3-aarons-favorite-topic</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep3-aarons-favorite-topic/episode.mp3" length="19070229" type="audio/mpeg" />
+      <description>This week we talk about the RFC process in general -- what it is, how it works, and how it came to be.</description>
+      <itunes:order>4</itunes:order>
     </item>
   </channel>
 </rss>
