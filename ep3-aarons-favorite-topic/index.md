@@ -32,4 +32,5 @@ This week we talk about the RFC process in general -- what it is, how it works, 
  - [Node Enhancement Proposals](https://github.com/nodejs/node-eps)
  - Internal RFCs at npm [blog post](http://blog.npmjs.org/post/153881413635/some-notes-on-rfcs)
  - [`assert_ne` RFC](https://github.com/rust-lang/rfcs/pull/1653)
+ - [Open tracking issues for approved but unimplemented RFCs](https://github.com/rust-lang/rust/issues?q=is%3Aopen+is%3Aissue+label%3AB-RFC-approved)
  - ["Writing is nature's way of letting you know how sloppy your thinking is." -Guidon](https://pbs.twimg.com/media/B7ztoglIcAALdAk.jpg)
