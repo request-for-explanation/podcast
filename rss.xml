@@ -7,9 +7,16 @@
     <atom:link href="http://request-for-explanation.github.io/podcast/rss.xml" rel="self" type="application/rss+xml" />
     <googleplay:author>The Request For Explanation Podcast</googleplay:author>
     <googleplay:email>manishearth@gmail.com</googleplay:email>
+    <itunes:owner>
+    <itunes:name>Manish Goregaokar</itunes:name>
+    <itunes:email>manishearth@gmail.com</itunes:email>
+    </itunes:owner>
     <googleplay:image href="https://request-for-explanation.github.io/podcast/podcast.png" />
+    <itunes:image href="https://request-for-explanation.github.io/podcast/podcast.png" />
     <language>en-us</language>
     <googleplay:category text="Technology"/>
+    <itunes:category text="Technology" />
+    <itunes:explicit>no</itunes:explicit>
     <item>
       <title>Episode #0 - What the Hell</title>
       <link>https://request-for-explanation.github.io/podcast/ep0-what-the-hell/</link>
