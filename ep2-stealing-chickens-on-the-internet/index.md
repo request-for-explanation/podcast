@@ -2,7 +2,7 @@
 
 <div class="date">July 6, 2017</div>
 
-This week we look at [RFC 2052](https://github.com/aturon/rfcs/blob/epochs/text/0000-epochs.md)
+This week we look at [RFC 2052](https://github.com/rust-lang/rfcs/pull/2052)
 "Evolving Rust through Epochs"
 
 <audio controls="controls">
