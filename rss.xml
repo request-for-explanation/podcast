@@ -6,6 +6,7 @@
     <description>A weekly discussion of Rust RFCs</description>
     <atom:link href="http://request-for-explanation.github.io/podcast/rss.xml" rel="self" type="application/rss+xml" />
     <googleplay:author>The Request For Explanation Podcast</googleplay:author>
+    <itunes:author>The Request For Explanation Podcast</itunes:author>
     <googleplay:email>manishearth@gmail.com</googleplay:email>
     <itunes:owner>
     <itunes:name>Manish Goregaokar</itunes:name>
