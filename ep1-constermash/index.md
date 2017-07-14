@@ -2,7 +2,7 @@
 
 <div class="date">June 29, 2017</div>
 
-This week we look at [RFC 2000](https://github.com/withoutboats/rfcs/blob/const-generics/text/0000-const-generics.md)
+This week we look at [RFC 2000](https://github.com/rust-lang/rfcs/pull/2000)
 "Const Generics"
 
 <audio controls="controls">

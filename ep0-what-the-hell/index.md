@@ -2,7 +2,7 @@
 
 <div class="date">June 19, 2017</div>
 
-This week we look at [RFC 2005](https://github.com/rust-lang/rfcs/blob/master/text/2005-match-ergonomics.md)
+This week we look at [RFC 2005](https://github.com/rust-lang/rfcs/pull/2005)
 "Match Ergonomics Using Default Binding Modes"
 
 <audio controls="controls">
