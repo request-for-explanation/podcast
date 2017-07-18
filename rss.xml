@@ -66,7 +66,7 @@
     <item>
       <title>Episode #4 - Literally Haskell</title>
       <link>https://request-for-explanation.github.io/podcast/ep4-literally-haskell/</link>
-      <pubDate>Mon, 10 July 2017 16:00:00 PDT</pubDate>
+      <pubDate>Mon, 17 July 2017 17:00:00 PDT</pubDate>
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep4-literally-haskell</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep4-literally-haskell/episode.mp3" length="12973478" type="audio/mpeg" />
       <description>This week we look at RFC 1598 "Generic Associated Types"</description>
