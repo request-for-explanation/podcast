@@ -63,5 +63,17 @@
       <itunes:order>4</itunes:order>
       <itunes:duration>54:01</itunes:duration>
     </item>
+    <item>
+      <title>Episode #4 - Literally Haskell</title>
+      <link>https://request-for-explanation.github.io/podcast/ep4-literally-haskell/</link>
+      <pubDate>Mon, 10 July 2017 16:00:00 PDT</pubDate>
+      <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep4-literally-haskell</guid>
+      <enclosure url="http://request-for-explanation.github.io/podcast/ep4-literally-haskell/episode.mp3" length="12973478" type="audio/mpeg" />
+      <description>This week we look at RFC 1598 "Generic Associated Types"</description>
+      <itunes:order>5</itunes:order>
+      <itunes:duration>36:41</itunes:duration>
+    </item>
   </channel>
 </rss>
+
+
