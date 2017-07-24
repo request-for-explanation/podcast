@@ -73,6 +73,16 @@
       <itunes:order>5</itunes:order>
       <itunes:duration>36:41</itunes:duration>
     </item>
+    <item>
+      <title>Episode #5 - Are you my main?</title>
+      <link>https://request-for-explanation.github.io/podcast/ep5-are-you-my-main/</link>
+      <pubDate>Mon, 24 July 2017 16:00:00 PDT</pubDate>
+      <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep5-are-you-my-main</guid>
+      <enclosure url="http://request-for-explanation.github.io/podcast/ep5-are-you-my-main/episode.mp3" length="8232966" type="audio/mpeg" />
+      <description> This week we look at RFC 1937 "? in main", as well as discuss some news on other RFCs.</description>
+      <itunes:order>6</itunes:order>
+      <itunes:duration>22:33</itunes:duration>
+    </item>
   </channel>
 </rss>
 
