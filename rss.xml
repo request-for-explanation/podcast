@@ -83,6 +83,16 @@
       <itunes:order>6</itunes:order>
       <itunes:duration>22:33</itunes:duration>
     </item>
+    <item>
+      <title>Episode #6 - Everything and the kitchen async</title>
+      <link>https://request-for-explanation.github.io/podcast/ep6-everything-and-the-kitchen-async/</link>
+      <pubDate>Mon, 31 July 2017 16:00:00 PDT</pubDate>
+      <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep6-everything-and-the-kitchen-async/</guid>
+      <enclosure url="http://request-for-explanation.github.io/podcast/ep6-everything-and-the-kitchen-async/episode.mp3" length="9530774" type="audio/mpeg" />
+      <description> This week we look at eRFC 2033 "Experimentally add coroutines to Rust"</description>
+      <itunes:order>7</itunes:order>
+      <itunes:duration>25:52</itunes:duration>
+    </item>
   </channel>
 </rss>
 
