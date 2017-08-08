@@ -93,6 +93,16 @@
       <itunes:order>7</itunes:order>
       <itunes:duration>25:52</itunes:duration>
     </item>
+    <item>
+      <title>Episode #7 - Unwrapping a great RFC</title>
+      <link>https://request-for-explanation.github.io/podcast/ep7-unwrapping-a-great-rfc/</link>
+      <pubDate>Tue, 8 Aug 2017 16:00:00 PDT</pubDate>
+      <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep7-unwrapping-a-great-rfc/</guid>
+      <enclosure url="http://request-for-explanation.github.io/podcast/ep7-unwrapping-a-great-rfc/episode.mp3" length="8715317" type="audio/mpeg" />
+      <description>This week we look at RFC 2091 "Implicit caller location"</description>
+      <itunes:order>8</itunes:order>
+      <itunes:duration>24:11</itunes:duration>
+    </item>
   </channel>
 </rss>
 
