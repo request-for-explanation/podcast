@@ -29,7 +29,7 @@
       <pubDate>Mon, 19 Jun 2017 19:45:01 EST</pubDate>
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep0-what-the-hell/</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep0-what-the-hell/episode.mp3" length="7057920" type="audio/mpeg" />
-      <description>This week we look at RFC 2005 "Match Ergonomics Using Default Binding Modes"</description>
+      <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2005">RFC 2005</a> "Match Ergonomics Using Default Binding Modes"]]></description>
       <itunes:order>1</itunes:order>
       <itunes:duration>20:29</itunes:duration>
     </item>
@@ -39,7 +39,7 @@
       <pubDate>Thu, 29 Jun 2017 17:30:00 PDT</pubDate>
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep1-constermash/</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep1-constermash/episode.mp3" length="28588800" type="audio/mpeg" />
-      <description>This week we look at RFC 2000 "Const Generics"</description>
+      <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2000">RFC 2000</a> "Const Generics"]]></description>
       <itunes:order>2</itunes:order>
       <itunes:duration>16:09</itunes:duration>
     </item>
@@ -49,7 +49,7 @@
       <pubDate>Thu, 6 July 2017 15:30:00 PDT</pubDate>
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep2-stealing-chickens-on-the-internet</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep2-stealing-chickens-on-the-internet/episode.mp3" length="19608187" type="audio/mpeg" />
-      <description>This week we look at RFC 2052 "Evolving Rust through Epochs"</description>
+      <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2052">RFC 2052</a> "Evolving Rust through Epochs"]]></description>
       <itunes:order>3</itunes:order>
       <itunes:duration>43:25</itunes:duration>
     </item>
@@ -59,7 +59,7 @@
       <pubDate>Mon, 10 July 2017 16:00:00 PDT</pubDate>
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep3-aarons-favorite-topic</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep3-aarons-favorite-topic/episode.mp3" length="19070229" type="audio/mpeg" />
-      <description>This week we talk about the RFC process in general -- what it is, how it works, and how it came to be.</description>
+      <description><![CDATA[This week we talk about the RFC process in general -- what it is, how it works, and how it came to be.]]></description>
       <itunes:order>4</itunes:order>
       <itunes:duration>54:01</itunes:duration>
     </item>
@@ -69,7 +69,7 @@
       <pubDate>Mon, 17 July 2017 17:00:00 PDT</pubDate>
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep4-literally-haskell</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep4-literally-haskell/episode.mp3" length="12973478" type="audio/mpeg" />
-      <description>This week we look at RFC 1598 "Generic Associated Types"</description>
+      <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/1598">RFC 1598</a> "Generic Associated Types"]]></description>
       <itunes:order>5</itunes:order>
       <itunes:duration>36:41</itunes:duration>
     </item>
@@ -79,7 +79,7 @@
       <pubDate>Mon, 24 July 2017 16:00:00 PDT</pubDate>
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep5-are-you-my-main</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep5-are-you-my-main/episode.mp3" length="8232966" type="audio/mpeg" />
-      <description> This week we look at RFC 1937 "? in main", as well as discuss some news on other RFCs.</description>
+      <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/1937">RFC 1937</a> "? in main", as well as discuss some news on other RFCs.]]></description>
       <itunes:order>6</itunes:order>
       <itunes:duration>22:33</itunes:duration>
     </item>
@@ -89,7 +89,7 @@
       <pubDate>Mon, 31 July 2017 16:00:00 PDT</pubDate>
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep6-everything-and-the-kitchen-async/</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep6-everything-and-the-kitchen-async/episode.mp3" length="9530774" type="audio/mpeg" />
-      <description> This week we look at eRFC 2033 "Experimentally add coroutines to Rust"</description>
+      <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2033">eRFC 2033</a> "Experimentally add coroutines to Rust"]]></description>
       <itunes:order>7</itunes:order>
       <itunes:duration>25:52</itunes:duration>
     </item>
@@ -99,7 +99,7 @@
       <pubDate>Tue, 8 Aug 2017 16:00:00 PDT</pubDate>
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep7-unwrapping-a-great-rfc/</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep7-unwrapping-a-great-rfc/episode.mp3" length="8715317" type="audio/mpeg" />
-      <description>This week we look at RFC 2091 "Implicit caller location"</description>
+      <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2091">RFC 2091</a> "Implicit caller location"]]></description>
       <itunes:order>8</itunes:order>
       <itunes:duration>24:11</itunes:duration>
     </item>
