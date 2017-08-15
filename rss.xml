@@ -103,6 +103,16 @@
       <itunes:order>8</itunes:order>
       <itunes:duration>24:11</itunes:duration>
     </item>
+    <item>
+      <title>Episode #8 - An Existential Crisis</title>
+      <link>https://request-for-explanation.github.io/podcast/ep8-an-existential-crisis/</link>
+      <pubDate>Tue, 15 Aug 2017 17:00:00 PDT</pubDate>
+      <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep8-an-existential-crisis/</guid>
+      <enclosure url="http://request-for-explanation.github.io/podcast/ep8-an-existential-crisis/episode.mp3" length="13713219" type="audio/mpeg" />
+      <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2071">RFC 2071</a> "Add impl Trait type alias and variable declarations"]]></description>
+      <itunes:order>9</itunes:order>
+      <itunes:duration>38:33</itunes:duration>
+    </item>
   </channel>
 </rss>
 
