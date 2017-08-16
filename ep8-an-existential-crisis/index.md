@@ -1,6 +1,6 @@
 % Request For Explanation #8 - An Existential Crisis
 
-<div class="date">August 5, 2017</div>
+<div class="date">August 15, 2017</div>
 
 This week we look at [RFC 2071](https://github.com/rust-lang/rfcs/pull/2071) "Add impl Trait type alias and variable declarations",
 which allows `impl Trait` (existential types) to be used in `type` aliases.
@@ -22,4 +22,4 @@ which allows `impl Trait` (existential types) to be used in `type` aliases.
 * Carol Nichols
 * Manish Goregaokar
 * Alexis Beingessner
-* Cramer Taylor
+* Taylor Cramer
