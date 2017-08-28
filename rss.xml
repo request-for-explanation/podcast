@@ -113,6 +113,16 @@
       <itunes:order>9</itunes:order>
       <itunes:duration>38:33</itunes:duration>
     </item>
+    <item>
+      <title>Episode #9 - A Once in a Lifetime RFC</title>
+      <link>https://request-for-explanation.github.io/podcast/ep9-a-once-in-a-lifetime-rfc/</link>
+      <pubDate>Mon, 28 Aug 2017 15:00:00 PDT</pubDate>
+      <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep9-a-once-in-a-lifetime-rfc/</guid>
+      <enclosure url="http://request-for-explanation.github.io/podcast/ep9-a-once-in-a-lifetime-rfc/episode.mp3" length="15077388" type="audio/mpeg" />
+      <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2094">RFC 2094</a> "Non-lexical lifetimes"]]></description>
+      <itunes:order>10</itunes:order>
+      <itunes:duration>42:13</itunes:duration>
+    </item>
   </channel>
 </rss>
 
