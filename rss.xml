@@ -123,6 +123,16 @@
       <itunes:order>10</itunes:order>
       <itunes:duration>42:13</itunes:duration>
     </item>
+    <item>
+      <title>Episode #10 - Two Paths Diverged in a Yellow Wood</title>
+      <link>https://request-for-explanation.github.io/podcast/ep10-two-paths-diverged-in-a-yellow-wood/</link>
+      <pubDate>Thu, 30 Aug 2017 1:30:00 PDT</pubDate>
+      <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep10-two-paths-diverged-in-a-yellow-wood/</guid>
+      <enclosure url="http://request-for-explanation.github.io/podcast/ep10-two-paths-diverged-in-a-yellow-wood/episode.mp3" length="19994929" type="audio/mpeg" />
+      <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2126">RFC 2126</a> "Clarify and streamline paths and visibility" (aka "The modules RFC")]]></description>
+      <itunes:order>11</itunes:order>
+      <itunes:duration>56:40</itunes:duration>
+    </item>
   </channel>
 </rss>
 
