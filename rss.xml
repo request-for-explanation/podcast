@@ -133,6 +133,16 @@
       <itunes:order>11</itunes:order>
       <itunes:duration>56:40</itunes:duration>
     </item>
+    <item>
+      <title>Episode #11 - Cargo Culting the Build System</title>
+      <link>https://request-for-explanation.github.io/podcast/ep11-cargo-culting-the-build-system/</link>
+      <pubDate>Monday, 25 Sept 2017 5:30:00 PDT</pubDate>
+      <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep11-cargo-culting-the-build-system/</guid>
+      <enclosure url="http://request-for-explanation.github.io/podcast/ep11-cargo-culting-the-build-system/episode.mp3" length="16170448" type="audio/mpeg" />
+      <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2136">eRFC 2136</a> "Cargo build system integration"]]></description>
+      <itunes:order>12</itunes:order>
+      <itunes:duration>42:00</itunes:duration>
+    </item>
   </channel>
 </rss>
 
