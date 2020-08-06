@@ -31,7 +31,7 @@
       <enclosure url="http://request-for-explanation.github.io/podcast/ep0-what-the-hell/episode.mp3" length="7057920" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2005">RFC 2005</a> "Match Ergonomics Using Default Binding Modes"]]></description>
       <itunes:episode>1</itunes:episode>
-      <itunes:duration>20:29</itunes:duration>
+      <itunes:duration>00:20:29</itunes:duration>
     </item>
     <item>
       <title>Episode #1 - Constermash</title>
@@ -41,7 +41,7 @@
       <enclosure url="http://request-for-explanation.github.io/podcast/ep1-constermash/episode.mp3" length="28588800" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2000">RFC 2000</a> "Const Generics"]]></description>
       <itunes:episode>2</itunes:episode>
-      <itunes:duration>16:09</itunes:duration>
+      <itunes:duration>00:16:09</itunes:duration>
     </item>
     <item>
       <title>Episode #2 - Stealing Chickens on the Internet</title>
@@ -51,7 +51,7 @@
       <enclosure url="http://request-for-explanation.github.io/podcast/ep2-stealing-chickens-on-the-internet/episode.mp3" length="19608187" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2052">RFC 2052</a> "Evolving Rust through Epochs"]]></description>
       <itunes:episode>3</itunes:episode>
-      <itunes:duration>43:25</itunes:duration>
+      <itunes:duration>00:43:25</itunes:duration>
     </item>
     <item>
       <title>Episode #3 - Aaron's Favorite Topic</title>
@@ -61,7 +61,7 @@
       <enclosure url="http://request-for-explanation.github.io/podcast/ep3-aarons-favorite-topic/episode.mp3" length="19070229" type="audio/mpeg" />
       <description><![CDATA[This week we talk about the RFC process in general -- what it is, how it works, and how it came to be.]]></description>
       <itunes:episode>4</itunes:episode>
-      <itunes:duration>54:01</itunes:duration>
+      <itunes:duration>00:54:01</itunes:duration>
     </item>
     <item>
       <title>Episode #4 - Literally Haskell</title>
@@ -71,7 +71,7 @@
       <enclosure url="http://request-for-explanation.github.io/podcast/ep4-literally-haskell/episode.mp3" length="12973478" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/1598">RFC 1598</a> "Generic Associated Types"]]></description>
       <itunes:episode>5</itunes:episode>
-      <itunes:duration>36:41</itunes:duration>
+      <itunes:duration>00:36:41</itunes:duration>
     </item>
     <item>
       <title>Episode #5 - Are you my main?</title>
@@ -81,7 +81,7 @@
       <enclosure url="http://request-for-explanation.github.io/podcast/ep5-are-you-my-main/episode.mp3" length="8232966" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/1937">RFC 1937</a> "? in main", as well as discuss some news on other RFCs.]]></description>
       <itunes:episode>6</itunes:episode>
-      <itunes:duration>22:33</itunes:duration>
+      <itunes:duration>00:22:33</itunes:duration>
     </item>
     <item>
       <title>Episode #6 - Everything and the kitchen async</title>
@@ -91,7 +91,7 @@
       <enclosure url="http://request-for-explanation.github.io/podcast/ep6-everything-and-the-kitchen-async/episode.mp3" length="9530774" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2033">eRFC 2033</a> "Experimentally add coroutines to Rust"]]></description>
       <itunes:episode>7</itunes:episode>
-      <itunes:duration>25:52</itunes:duration>
+      <itunes:duration>00:25:52</itunes:duration>
     </item>
     <item>
       <title>Episode #7 - Unwrapping a great RFC</title>
@@ -101,7 +101,7 @@
       <enclosure url="http://request-for-explanation.github.io/podcast/ep7-unwrapping-a-great-rfc/episode.mp3" length="8715317" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2091">RFC 2091</a> "Implicit caller location"]]></description>
       <itunes:episode>8</itunes:episode>
-      <itunes:duration>24:11</itunes:duration>
+      <itunes:duration>00:24:11</itunes:duration>
     </item>
     <item>
       <title>Episode #8 - An Existential Crisis</title>
@@ -111,7 +111,7 @@
       <enclosure url="http://request-for-explanation.github.io/podcast/ep8-an-existential-crisis/episode.mp3" length="13713219" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2071">RFC 2071</a> "Add impl Trait type alias and variable declarations"]]></description>
       <itunes:episode>9</itunes:episode>
-      <itunes:duration>38:33</itunes:duration>
+      <itunes:duration>00:38:33</itunes:duration>
     </item>
     <item>
       <title>Episode #9 - A Once in a Lifetime RFC</title>
@@ -121,7 +121,7 @@
       <enclosure url="http://request-for-explanation.github.io/podcast/ep9-a-once-in-a-lifetime-rfc/episode.mp3" length="15077388" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2094">RFC 2094</a> "Non-lexical lifetimes"]]></description>
       <itunes:episode>10</itunes:episode>
-      <itunes:duration>42:13</itunes:duration>
+      <itunes:duration>00:42:13</itunes:duration>
     </item>
     <item>
       <title>Episode #10 - Two Paths Diverged in a Yellow Wood</title>
@@ -131,7 +131,7 @@
       <enclosure url="http://request-for-explanation.github.io/podcast/ep10-two-paths-diverged-in-a-yellow-wood/episode.mp3" length="19994929" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2126">RFC 2126</a> "Clarify and streamline paths and visibility" (aka "The modules RFC")]]></description>
       <itunes:episode>11</itunes:episode>
-      <itunes:duration>56:40</itunes:duration>
+      <itunes:duration>00:56:40</itunes:duration>
     </item>
     <item>
       <title>Episode #11 - Cargo Culting the Build System</title>
@@ -141,7 +141,7 @@
       <enclosure url="http://request-for-explanation.github.io/podcast/ep11-cargo-culting-the-build-system/episode.mp3" length="16170448" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2136">eRFC 2136</a> "Cargo build system integration"]]></description>
       <itunes:episode>12</itunes:episode>
-      <itunes:duration>42:00</itunes:duration>
+      <itunes:duration>00:42:00</itunes:duration>
     </item>
   </channel>
 </rss>
