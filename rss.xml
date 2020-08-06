@@ -30,7 +30,7 @@
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep0-what-the-hell/</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep0-what-the-hell/episode.mp3" length="7057920" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2005">RFC 2005</a> "Match Ergonomics Using Default Binding Modes"]]></description>
-      <itunes:order>1</itunes:order>
+      <itunes:episode>1</itunes:episode>
       <itunes:duration>20:29</itunes:duration>
     </item>
     <item>
@@ -40,7 +40,7 @@
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep1-constermash/</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep1-constermash/episode.mp3" length="28588800" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2000">RFC 2000</a> "Const Generics"]]></description>
-      <itunes:order>2</itunes:order>
+      <itunes:episode>2</itunes:episode>
       <itunes:duration>16:09</itunes:duration>
     </item>
     <item>
@@ -50,7 +50,7 @@
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep2-stealing-chickens-on-the-internet</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep2-stealing-chickens-on-the-internet/episode.mp3" length="19608187" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2052">RFC 2052</a> "Evolving Rust through Epochs"]]></description>
-      <itunes:order>3</itunes:order>
+      <itunes:episode>3</itunes:episode>
       <itunes:duration>43:25</itunes:duration>
     </item>
     <item>
@@ -60,7 +60,7 @@
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep3-aarons-favorite-topic</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep3-aarons-favorite-topic/episode.mp3" length="19070229" type="audio/mpeg" />
       <description><![CDATA[This week we talk about the RFC process in general -- what it is, how it works, and how it came to be.]]></description>
-      <itunes:order>4</itunes:order>
+      <itunes:episode>4</itunes:episode>
       <itunes:duration>54:01</itunes:duration>
     </item>
     <item>
@@ -70,7 +70,7 @@
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep4-literally-haskell</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep4-literally-haskell/episode.mp3" length="12973478" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/1598">RFC 1598</a> "Generic Associated Types"]]></description>
-      <itunes:order>5</itunes:order>
+      <itunes:episode>5</itunes:episode>
       <itunes:duration>36:41</itunes:duration>
     </item>
     <item>
@@ -80,7 +80,7 @@
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep5-are-you-my-main</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep5-are-you-my-main/episode.mp3" length="8232966" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/1937">RFC 1937</a> "? in main", as well as discuss some news on other RFCs.]]></description>
-      <itunes:order>6</itunes:order>
+      <itunes:episode>6</itunes:episode>
       <itunes:duration>22:33</itunes:duration>
     </item>
     <item>
@@ -90,7 +90,7 @@
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep6-everything-and-the-kitchen-async/</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep6-everything-and-the-kitchen-async/episode.mp3" length="9530774" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2033">eRFC 2033</a> "Experimentally add coroutines to Rust"]]></description>
-      <itunes:order>7</itunes:order>
+      <itunes:episode>7</itunes:episode>
       <itunes:duration>25:52</itunes:duration>
     </item>
     <item>
@@ -100,7 +100,7 @@
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep7-unwrapping-a-great-rfc/</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep7-unwrapping-a-great-rfc/episode.mp3" length="8715317" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2091">RFC 2091</a> "Implicit caller location"]]></description>
-      <itunes:order>8</itunes:order>
+      <itunes:episode>8</itunes:episode>
       <itunes:duration>24:11</itunes:duration>
     </item>
     <item>
@@ -110,7 +110,7 @@
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep8-an-existential-crisis/</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep8-an-existential-crisis/episode.mp3" length="13713219" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2071">RFC 2071</a> "Add impl Trait type alias and variable declarations"]]></description>
-      <itunes:order>9</itunes:order>
+      <itunes:episode>9</itunes:episode>
       <itunes:duration>38:33</itunes:duration>
     </item>
     <item>
@@ -120,7 +120,7 @@
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep9-a-once-in-a-lifetime-rfc/</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep9-a-once-in-a-lifetime-rfc/episode.mp3" length="15077388" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2094">RFC 2094</a> "Non-lexical lifetimes"]]></description>
-      <itunes:order>10</itunes:order>
+      <itunes:episode>10</itunes:episode>
       <itunes:duration>42:13</itunes:duration>
     </item>
     <item>
@@ -130,7 +130,7 @@
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep10-two-paths-diverged-in-a-yellow-wood/</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep10-two-paths-diverged-in-a-yellow-wood/episode.mp3" length="19994929" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2126">RFC 2126</a> "Clarify and streamline paths and visibility" (aka "The modules RFC")]]></description>
-      <itunes:order>11</itunes:order>
+      <itunes:episode>11</itunes:episode>
       <itunes:duration>56:40</itunes:duration>
     </item>
     <item>
@@ -140,7 +140,7 @@
       <guid isPermaLink="false">https://request-for-explanation.github.io/podcast/ep11-cargo-culting-the-build-system/</guid>
       <enclosure url="http://request-for-explanation.github.io/podcast/ep11-cargo-culting-the-build-system/episode.mp3" length="16170448" type="audio/mpeg" />
       <description><![CDATA[This week we look at <a href="https://github.com/rust-lang/rfcs/pull/2136">eRFC 2136</a> "Cargo build system integration"]]></description>
-      <itunes:order>12</itunes:order>
+      <itunes:episode>12</itunes:episode>
       <itunes:duration>42:00</itunes:duration>
     </item>
   </channel>
