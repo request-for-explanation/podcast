@@ -14,8 +14,8 @@
     <itunes:author>The Request For Explanation Podcast</itunes:author>
     <googleplay:email>manishearth@gmail.com</googleplay:email>
     <itunes:owner>
-    <itunes:name>Manish Goregaokar</itunes:name>
-    <itunes:email>manishearth@gmail.com</itunes:email>
+        <itunes:name>Manish Goregaokar</itunes:name>
+        <itunes:email>manishearth@gmail.com</itunes:email>
     </itunes:owner>
     <googleplay:image href="https://request-for-explanation.github.io/podcast/podcast.png" />
     <itunes:image href="https://request-for-explanation.github.io/podcast/podcast.png" />
